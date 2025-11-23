@@ -1,20 +1,20 @@
-# 🔑 Authentication (JWT Bearer)
+# 🔑 Autenticação (JWT Bearer)
 
-Most endpoints in this API require authentication via a **JSON Web Token (JWT)**.
+A maioria dos endpoints desta API requer autenticação via **Token Web JSON (JWT)**.
 
-## Obtaining the Token
+## Obtenção do Token
 
-The token is obtained through the login endpoint.
+O token é obtido através do endpoint de login.
 
 ### `POST /auth/login`
 
-Authenticates a user and returns a JWT for use in protected requests.
+Autentica um usuário e retorna um JWT para uso em solicitações protegidas.
 
-<Card title="Request" icon="terminal">
+<Card title="Requisição" icon="terminal">
   ```bash
   curl -X POST /auth/login \
   -H "Content-Type: application/json" \
   -d '{
-    "email": "user@example.com",
-    "password": "your_password"
+    "email": "usuario@exemplo.com",
+    "password": "sua_senha"
   }'

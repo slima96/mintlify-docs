@@ -1,16 +1,26 @@
-# Bem-vindo!
+# 🚀 Visão Geral da API
 
-... (Seu conteúdo existente) ...
+Bem-vindo à documentação da API para a plataforma **Gsafra**. Esta API fornece o *backend* para o Painel de Gerenciamento e integrações críticas, incluindo serviços financeiros e utilitários.
 
-## Primeiros Passos com a API
+## 🔗 Estrutura das Rotas
 
-Para começar a fazer chamadas, você precisará primeiro se **autenticar**.
+A API é composta por três domínios de roteamento principais, definidos nos *routers* do Express:
 
-<CardGroup>
-  <Card title="Autenticação" icon="key" href="/api-reference/authentication">
-    Aprenda a obter e usar seu Token JWT Bearer.
-  </Card>
-  <Card title="Rotas Panel" icon="desktop-computer" href="/api-reference/panel">
-    Gerencie usuários, empresas e treinamentos.
-  </Card>
-</CardGroup>
+| Roteador | Prefixo (Base URL) | Descrição Principal |
+| :--- | :--- | :--- |
+| **`panelRouter`** | `/` (Raiz) | Rotas de gerenciamento de Painel (Usuários, Empresas, Notificações, Treinamentos, Autenticação). |
+| **`gsafraRouter`** | `/gsafra` | Rotas específicas de serviços Gsafra (Contas, Papéis, Importação OFX). |
+| **`pluggyRouter`** | `/pluggy` | Rotas de integração com a API Pluggy (Tokens, Conectores, Contas, Transações). |
+
+## 🔒 Autenticação
+
+A maioria das rotas está protegida pelo `authMiddleware`. O acesso requer um **Token JWT** válido, que deve ser enviado no cabeçalho `Authorization`.
+
+<a href="/api-reference/authentication">Detalhes sobre a Autenticação</a>
+
+## 🌐 URLs Base
+
+| Ambiente | URL Base |
+| :--- | :--- |
+| **Produção** | `https://api.gsafra.com` (Exemplo) |
+| **Desenvolvimento** | `http://localhost:3003` |

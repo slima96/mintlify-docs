@@ -53,7 +53,7 @@
           {
             "group": "API documentation",
             "pages": [
-              "api-reference/authentication"
+              "api-reference/auth"
             ]
           },
           {

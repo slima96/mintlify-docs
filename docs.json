@@ -21,14 +21,14 @@
     {
       "group": "Introdução",
       "pages": [
-        "index",        // Home page, provavelmente o seu "index.mdx"
-        "quickstart"    // quickstart.mdx
+        "index",     
+        "quickstart"    
       ]
     },
     {
       "group": "Desenvolvimento",
       "pages": [
-        "development" // development.mdx
+        "development" 
       ]
     },
     {
@@ -43,7 +43,7 @@
     {
       "group": "Ferramentas",
       "pages": [
-        "ai-tools/index" // Presumindo que você queira manter "ai-tools"
+        "ai-tools/index" 
       ]
     }
   ],
